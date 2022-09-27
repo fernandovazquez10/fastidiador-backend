@@ -1,0 +1,2 @@
+from main.serializers.status_dia import StatusDiaSerializer
+from main.serializers.user_curso import UserCursoSerializer
