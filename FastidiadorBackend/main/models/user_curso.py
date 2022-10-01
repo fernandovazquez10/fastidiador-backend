@@ -9,7 +9,7 @@ class UserCurso(models.Model):
     url_curso = models.URLField(blank=True, null=True, verbose_name="URL del curso")
     fecha_inicio = models.DateField(blank=True, null=True, verbose_name="Fecha de inicio")
     fecha_fin = models.DateField(blank=True, null=True, verbose_name="Fecha de finalización")
-    ulr_certificado = models.URLField(blank=True, null=True, verbose_name="URL del certificado")
+    url_certificado = models.URLField(blank=True, null=True, verbose_name="URL del certificado")
 
     def __str__(self):
         return f"{self.user} - {self.curso}"

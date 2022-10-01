@@ -7,5 +7,12 @@ class UserCursoSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserCurso
         fields = (
-            '__all__',
+            'id',
+            'user',
+            'curso',
+            'activo',
+            'url_curso',
+            'fecha_inicio',
+            'fecha_fin',
+            'url_certificado'
         )

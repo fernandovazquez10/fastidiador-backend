@@ -7,5 +7,8 @@ class StatusDiaSerializer(serializers.ModelSerializer):
     class Meta:
         model = StatusDia
         fields = (
-            '__all__',
+            'id',
+            'user',
+            'dia',
+            'status'
         )
