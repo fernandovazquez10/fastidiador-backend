@@ -9,7 +9,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'FastidiadorBackend.settings')
 
 app = Celery('FastidiadorBackend')
 
-app.config_from_object('djnago.conf:settings', namespace="CELERY",)
+app.config_from_object('django.conf:settings', namespace="CELERY",)
 
 app.conf.update(
     result_expires=3600,
@@ -21,8 +21,8 @@ app.conf.beat_schedule = {
     "every day at 12 AM": {
         "task": "create_dia-status",
         "schedule": crontab(
-            hour='8',
-            minute=10
+            hour='0',
+            minute=0
         )
     },
     "every day an 8 PM": {

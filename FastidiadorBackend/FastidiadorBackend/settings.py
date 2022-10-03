@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'FastidiadorBackend.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
+SECRET_KEY = 'django-insecure--gvk*dm3-#(iwmewl7liav-x1ge*niv(k&2!7!p*-m9^0n_p3'
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
