@@ -122,3 +122,4 @@ class CustomModelViewSet(ModelViewSet):
         self.choice_fields = choice_fields
         super(CustomModelViewSet, self).__init__(*args, **kwargs)
             
+template_correo = "Hola mundo"

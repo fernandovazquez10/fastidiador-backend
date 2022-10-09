@@ -157,3 +157,15 @@ CELERY_TASK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60
 CELERY_RESULT_BACKEND = 'django-db'
 CELERY_CACHE_BACKEND = 'django-cache'
+
+EMAIL_BACKEND = 'post_office.EmailBackend'
+
+POST_OFFICE = {
+    'DEFAULT_PRIORITY': 'now'
+}
+
+EMAIL_HOST = os.environ['EMAIL_HOST']
+EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
+EMAIL_PORT = os.environ['EMAIL_PORT']
+EMAIL_USE_TLS = False
+DEFAULT_FROM_EMAIL = os.environ['DEFAULT_FROM_EMAIL']

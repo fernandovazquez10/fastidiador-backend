@@ -38,3 +38,4 @@ class StatusDiaViewSet(CustomModelViewSet):
             "dia": status_dia.dia,
         }
         return Response(data, status=status.HTTP_200_OK)
+        
